@@ -71,6 +71,17 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>>azure-webapp-maven-plugin</artifactId>
+				<version>x.xx.x</version>
+				<configuration>
+					<schemaVersion>v2</schemaVersion>
+					<resourceGroup>generated-app-name-rg</resourceGroup>
+					<appName>generated-app-name</appName>
+				...
+				</configuration>
+            </plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
